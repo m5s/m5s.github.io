@@ -67,16 +67,25 @@
         .links {
             display: flex;
             gap: 1.5rem;
+            flex-wrap: wrap;
             margin-top: 2rem;
             font-size: 0.9rem;
         }
 
-        .links span, .links a {
+        .links span {
             color: #333;
         }
 
         a {
+            color: #333;
             text-decoration: none;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.7;
         }
 
         /* Responsive adjustments */
@@ -92,18 +101,13 @@
             h1 {
                 font-size: 1.75rem;
             }
-
-            .links {
-                flex-direction: column;
-                gap: 1rem;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="photo-container">
-            <img src="/image.jpeg" alt="Michael Fives" class="profile-photo">
+            <img src="/api/placeholder/300/225" alt="Michael Fives" class="profile-photo">
         </div>
         <h1>Michael Fives</h1>
         <p>
